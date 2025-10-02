@@ -1,37 +1,69 @@
+# ==========================================
 # Dependencies
+# ==========================================
 node_modules/
 /.pnp
 .pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# Testing
-/coverage
+# ==========================================
+# Environment Variables
+# ==========================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+*.env
+!.env.example
 
-# Production builds
+# ==========================================
+# Production Builds
+# ==========================================
 /frontend/dist
 /frontend/build
 /client/dist
 /client/build
 /backend/dist
 /backend/build
+/server/dist
+/server/build
+dist/
+build/
+out/
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-*.env
+# ==========================================
+# Testing & Coverage
+# ==========================================
+/coverage
+.nyc_output
+*.lcov
+.jest-cache
 
+# ==========================================
 # Logs
+# ==========================================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-.pnpm-debug.log*
-logs
-*.log
+pnpm-debug.log*
+combined.log
+error.log
+access.log
 
-# OS files
+# ==========================================
+# OS Files
+# ==========================================
 .DS_Store
 .DS_Store?
 ._*
@@ -40,9 +72,14 @@ logs
 ehthumbs.db
 Thumbs.db
 Desktop.ini
+$RECYCLE.BIN/
 
-# IDE and Editor files
+# ==========================================
+# IDE & Editor Files
+# ==========================================
 .vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea/
 *.swp
 *.swo
@@ -52,57 +89,134 @@ Desktop.ini
 .settings/
 *.sublime-project
 *.sublime-workspace
+.history/
+*.code-workspace
 
-# Optional npm cache directory
+# ==========================================
+# Package Manager Files
+# ==========================================
 .npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional stylelint cache
-.stylelintcache
-
-# Yarn
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
 
-# Package manager lock files (optional - uncomment if you want to ignore them)
+# Optional - Uncomment to ignore lock files
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
 
-# Build files
+# ==========================================
+# Cache & Temporary Files
+# ==========================================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
 *.tsbuildinfo
-
-# Temporary files
 *.tmp
 *.temp
-.cache/
+.turbo/
 
-# MongoDB
+# ==========================================
+# Database Files
+# ==========================================
 /data/db
 *.mongodb
+*.db
+*.sqlite
+*.sqlite3
 
+# ==========================================
+# File Uploads & Media
+# ==========================================
+/uploads
+/public/uploads
+/backend/uploads
+/server/uploads
+*.jpg.tmp
+*.png.tmp
+*.pdf.tmp
+
+# ==========================================
 # Docker
+# ==========================================
 docker-compose.override.yml
+.dockerignore
+*.dockerfile.local
 
-# Misc
-.vercel
-.next/
-out/
-*.pem
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Local development
-.local
-
-# AWS
+# ==========================================
+# AWS & Cloud Services
+# ==========================================
 .elasticbeanstalk/
 aws-config/secrets.yml
+aws-config/*.pem
+.aws-sam/
+
+# ==========================================
+# Google Services
+# ==========================================
+google-credentials.json
+service-account-key.json
+*-service-account.json
+
+# ==========================================
+# Payment Gateway Keys
+# ==========================================
+razorpay-keys.json
+payment-credentials.json
+
+# ==========================================
+# SSL/TLS Certificates
+# ==========================================
+*.pem
+*.key
+*.cert
+*.crt
+*.csr
+/ssl/
+/certificates/
+
+# ==========================================
+# Deployment & CI/CD
+# ==========================================
+.vercel
+.netlify
+.firebase/
+.serverless/
+.github/workflows/secrets.yml
+
+# ==========================================
+# Backup & Archive Files
+# ==========================================
+*.bak
+*.backup
+*.old
+*.orig
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ==========================================
+# Generated Documentation
+# ==========================================
+/docs/api
+/api-docs
+.docusaurus/
+
+# ==========================================
+# Miscellaneous
+# ==========================================
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.local
+*.pid
+*.seed
+*.pid.lock
