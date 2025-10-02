@@ -138,15 +138,16 @@
 
 .btn-login {
   background: transparent;
-  border-color: var(--player-green);
-  color: var(--player-green);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .btn-login:hover {
-  background: var(--player-green);
-  color: var(--bg-primary);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 1);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(10, 215, 161, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .btn-register {
