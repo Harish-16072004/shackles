@@ -47,18 +47,28 @@ const Contact = () => {
       icon: '📧',
       items: [
         {
-          label: 'Gokul S',
+          label: 'Killivalavan S',
+          value: '+91 9514585887',
+          link: 'tel:+919514585887',
+        },
+        {
+          label: 'Abirami N',
           value: '+91 9514585887',
           link: 'tel:+919514585887',
         },
       ],
     },
     {
-      title: 'Registration Support',
-      icon: '📝',
+      title: 'Event Queries',
+      icon: '',
       items: [
         {
-          label: 'Sharun',
+          label: 'Sakthivel K',
+          value: '+91 9384583077',
+          link: 'tel:+919384583077',
+        },
+        {
+          label: 'Prabhuvelsundhar S R',
           value: '+91 9384583077',
           link: 'tel:+919384583077',
         },
@@ -70,19 +80,19 @@ const Contact = () => {
       items: [
         {
           label: 'Official Email',
-          value: 'shackles2025@acgcet.ac.in',
-          link: 'mailto:shackles2025@acgcet.ac.in',
+          value: 'shackles2k25@gmail.com',
+          link: 'mailto:shackles2k25@gmail.com',
         },
       ],
     },
     {
-      title: 'Location',
+      title: 'Registration Support',
       icon: '📍',
       items: [
         {
-          label: 'ACGCET, Karaikudi',
-          value: 'Alagappa Chettiar Government College of Engineering & Technology, Karaikudi - 630003, Tamil Nadu',
-          link: 'https://maps.app.goo.gl/your-location-link',
+          label: 'Harish J',
+          value: '+91 7305432775',
+          link: 'tel:+917305432775',
         },
       ],
     },
@@ -117,95 +127,6 @@ const Contact = () => {
                 ))}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="contact-coordinators">
-        <div className="coordinators-container">
-          <h2>Event Coordinators</h2>
-          <div className="coordinators-grid">
-            <div className="coordinator-category">
-              <h3 className="category-title technical-title">
-                <span className="category-symbol">■</span>
-                Technical Events
-              </h3>
-              <div className="coordinator-list">
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Mogith</p>
-                  <p className="coordinator-event">Paper Presentation</p>
-                  <a href="tel:+916374763740">+91 6374763740</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Jeffery Shakil</p>
-                  <p className="coordinator-event">Technical Quiz</p>
-                  <a href="tel:+918778531340">+91 8778531340</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Praveen</p>
-                  <p className="coordinator-event">CAD Modelling</p>
-                  <a href="tel:+919514585887">+91 9514585887</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Vignesh</p>
-                  <p className="coordinator-event">Water Rocketry</p>
-                  <a href="tel:+919361428799">+91 9361428799</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Sanjay</p>
-                  <p className="coordinator-event">Motor Montage</p>
-                  <a href="tel:+919384583077">+91 9384583077</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Shobith</p>
-                  <p className="coordinator-event">Mech O Mania</p>
-                  <a href="tel:+918098726547">+91 8098726547</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="coordinator-category">
-              <h3 className="category-title non-technical-title">
-                <span className="category-symbol">○</span>
-                Non-Technical Events
-              </h3>
-              <div className="coordinator-list">
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Abishek</p>
-                  <p className="coordinator-event">IPL Auction</p>
-                  <a href="tel:+919384583077">+91 9384583077</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Dharun</p>
-                  <p className="coordinator-event">Kollywood Quiz</p>
-                  <a href="tel:+918098726547">+91 8098726547</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Naveen</p>
-                  <p className="coordinator-event">Red Light Green Light</p>
-                  <a href="tel:+919361428799">+91 9361428799</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="coordinator-category">
-              <h3 className="category-title special-title">
-                <span className="category-symbol">△</span>
-                Special Events
-              </h3>
-              <div className="coordinator-list">
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Gokul S</p>
-                  <p className="coordinator-event">Idea Pitching</p>
-                  <a href="tel:+919514585887">+91 9514585887</a>
-                </div>
-                <div className="coordinator-item">
-                  <p className="coordinator-name">Sharun</p>
-                  <p className="coordinator-event">Robo Soccer</p>
-                  <a href="tel:+919384583077">+91 9384583077</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -331,13 +252,15 @@ const Contact = () => {
           <h2>Connect With Us</h2>
           <div className="social-links">
             <a 
-              href="https://www.instagram.com/mechanical_acgcet" 
+              href="https://www.instagram.com/mechasso_acgcet" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link instagram"
             >
-              <svg viewBox="0 0 24 24" width="32" height="32">
-                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2"/>
+                <circle cx="18" cy="6" r="1" fill="currentColor"/>
               </svg>
               <span>@mechanical_acgcet</span>
             </a>
