@@ -108,6 +108,11 @@ const Team = () => {
       'VARUNRAJ': varunrajImage,
       'POORNITHA': poornithaImage,
       'SURESH': sureshImage,
+      // Additional mappings for Nithish and Ganesh with variations
+      'NITHISH KUMAR': nithishImage,
+      'NITHISH': nithishImage,
+      'GANESH MOORTHI': ganeshImage,
+      'GANESH': ganeshImage,
     };
     
     return imageMap[name] || null;

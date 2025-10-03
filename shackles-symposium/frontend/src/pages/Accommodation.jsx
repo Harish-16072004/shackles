@@ -73,11 +73,11 @@ const Accommodation = () => {
               </div>
               <div className="rule-item">
                 <span className="rule-number">5.</span>
-                <p>ACCOMMODATION WILL BE PROVIDED STRICTLY FOR THE NIGHTS OF OCTOBER 28 AND 29 ONLY. NO EXTENSIONS WILL BE PERMITTED.</p>
+                <p>ACCOMMODATION WILL BE PROVIDED STRICTLY FOR THE NIGHTS OF OCTOBER 22 AND 23 ONLY. NO EXTENSIONS WILL BE PERMITTED.</p>
               </div>
               <div className="rule-item">
                 <span className="rule-number">6.</span>
-                <p>PARTICIPANTS ATTENDING WORKSHOPS SCHEDULED ON OCTOBER 29 WILL BE ELIGIBLE FOR ACCOMMODATION ON THAT DATE.</p>
+                <p>PARTICIPANTS ATTENDING WORKSHOPS SCHEDULED ON OCTOBER 23 WILL BE ELIGIBLE FOR ACCOMMODATION ON THAT DATE.</p>
               </div>
               <div className="rule-item">
                 <span className="rule-number">7.</span>
@@ -94,19 +94,19 @@ const Accommodation = () => {
                 <div className="date-selection">
                   <button
                     type="button"
-                    className={`date-btn ${selectedDates.includes('OCT 28') ? 'active' : ''}`}
-                    onClick={() => handleDateToggle('OCT 28')}
+                    className={`date-btn ${selectedDates.includes('OCT 2') ? 'active' : ''}`}
+                    onClick={() => handleDateToggle('OCT 22')}
                   >
                     OCT 28
-                    {selectedDates.includes('OCT 28') && <span className="selected-indicator">✓</span>}
+                    {selectedDates.includes('OCT 22') && <span className="selected-indicator">✓</span>}
                   </button>
                   <button
                     type="button"
-                    className={`date-btn ${selectedDates.includes('OCT 29') ? 'active' : ''}`}
-                    onClick={() => handleDateToggle('OCT 29')}
+                    className={`date-btn ${selectedDates.includes('OCT 23') ? 'active' : ''}`}
+                    onClick={() => handleDateToggle('OCT 23')}
                   >
-                    OCT 29
-                    {selectedDates.includes('OCT 29') && <span className="selected-indicator">✓</span>}
+                    OCT 23
+                    {selectedDates.includes('OCT 23') && <span className="selected-indicator">✓</span>}
                   </button>
                 </div>
                 {selectedDates.length > 0 && (
