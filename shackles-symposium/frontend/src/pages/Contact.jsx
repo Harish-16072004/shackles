@@ -44,7 +44,6 @@ const Contact = () => {
   const contactInfo = [
     {
       title: 'General Queries',
-      icon: '📧',
       items: [
         {
           label: 'Killivalavan S',
@@ -60,7 +59,6 @@ const Contact = () => {
     },
     {
       title: 'Event Queries',
-      icon: '',
       items: [
         {
           label: 'Sakthivel K',
@@ -69,14 +67,13 @@ const Contact = () => {
         },
         {
           label: 'Prabhuvelsundhar S R',
-          value: '+91 9384583077',
-          link: 'tel:+919384583077',
+          value: '+91 9600463229',
+          link: 'tel:+919600463229',
         },
       ],
     },
     {
       title: 'Email',
-      icon: '✉️',
       items: [
         {
           label: 'Official Email',
@@ -87,7 +84,6 @@ const Contact = () => {
     },
     {
       title: 'Registration Support',
-      icon: '📍',
       items: [
         {
           label: 'Harish J',
@@ -114,7 +110,7 @@ const Contact = () => {
                 <h3 className="contact-card-title">{info.title}</h3>
                 {info.items.map((item, idx) => (
                   <div key={idx} className="contact-item">
-                    <p className="contact-label">{item.label}</p>
+                    <p className="contact-label">{item.label}:</p>
                     <a 
                       href={item.link} 
                       className="contact-value"
@@ -136,7 +132,7 @@ const Contact = () => {
           <h2>Find Us</h2>
           <div className="map-wrapper">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.5234567890123!2d78.7890123456789!3d9.8765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTInMzUuNiJOIDc4wrA0NycyMC40IkU!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.1104180374587!2d78.79213707487264!3d10.090037990019967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0067a028f8a8f9%3A0x9c2484c6df0fb26!2sAlagappa%20Chettiar%20Government%20College%20of%20Engineering%20%26%20Technology.!5e0!3m2!1sen!2sin!4v1759495426123!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0, borderRadius: '20px' }}
@@ -149,13 +145,14 @@ const Contact = () => {
           <div className="map-info">
             <p className="map-address">
               <strong>Alagappa Chettiar Government College of Engineering & Technology</strong><br />
-              Karaikudi - 630003<br />
-              Sivaganga District, Tamil Nadu, India
+             
+              Karaikudi, Tamil Nadu 630003<br />
+              Sivaganga District, India
             </p>
           </div>
         </div>
       </section>
-
+{/*
       <section className="contact-form-section">
         <div className="form-container">
           <h2>Send Us a Message</h2>
@@ -278,7 +275,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
+*/}
       <section className="contact-cta">
         <h2>Ready to Join SHACKLES 2025?</h2>
         <p>Register now and be part of an amazing experience</p>
@@ -289,5 +286,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;

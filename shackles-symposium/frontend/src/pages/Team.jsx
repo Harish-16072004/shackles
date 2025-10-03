@@ -1,22 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Team.css';
-import memberAvatar from '../assets/images/member-avatar.png';
 
 // Import team member images
+import abiraiImage from '../assets/images/ABIRAMI.webp';
 import akilanImage from '../assets/images/AKILAN AK.webp';
 import anithaImage from '../assets/images/Anitha_M.webp';
+import aravindImage from '../assets/images/ARAVIND .A.webp';
 import aswinImage from '../assets/images/aswin_padmanapan.webp';
 import barathImage from '../assets/images/Barath_Bavina.webp';
 import drRamanathanImage from '../assets/images/Dr_K_Ramanathan.webp';
 import gnanaprakashImage from '../assets/images/Gnanaprakash_DT.webp';
+import harishImage from '../assets/images/HARISH.webp';
 import hariPrasathImage from '../assets/images/Hari_Prasath.webp';
-import kaushikImage from '../assets/images/Kaushik_Kumar.webp';
+import kaushikImage from '../assets/images/KAUSHIKKUMAR.webp';
 import killivalanImage from '../assets/images/Killivalavan.webp';
+import maarishImage from '../assets/images/MAARISH_AADITH.webp';
+import manjuImage from '../assets/images/MANJU_SELVAM.webp';
+import manojImage from '../assets/images/MANOJ_A.webp';
 import megalaImage from '../assets/images/megala_shakthi.webp';
 import mukilandrenImage from '../assets/images/Mukilandren_C_D.webp';
 import nidharshanImage from '../assets/images/Nidharshan_Shanmuam.webp';
+import nishwathImage from '../assets/images/NISHWATH_FATHIMA.webp';
 import padmalosanaImage from '../assets/images/Padmalosana.webp';
+import poornithaImage from '../assets/images/POORNITHA.webp';
 import prabhuvelsundharImage from '../assets/images/Prabuvelsundar_S_R.webp';
 import prajithImage from '../assets/images/PRAJITH AJAY.webp';
 import premImage from '../assets/images/Prem_Kumar.webp';
@@ -25,6 +32,9 @@ import sakthivelImage from '../assets/images/SAKTHIVEL_K.webp';
 import sathishImage from '../assets/images/Sathish.webp';
 import sivaImage from '../assets/images/Siva_G.webp';
 import sowmithaImage from '../assets/images/Sowmitha_SenthilKumar.webp';
+import sureshImage from '../assets/images/SURESH.webp';
+import suryaImage from '../assets/images/SURYA.webp';
+import varunrajImage from '../assets/images/VARUNRAJ.webp';
 import vigneshImage from '../assets/images/Vignesh.webp';
 
 const Team = () => {
@@ -34,28 +44,52 @@ const Team = () => {
       'Dr.K.Ramanathan': drRamanathanImage,
       'Prof.V.Jawahar': profJawaharImage,
       'KILLIVALAVAN S': killivalanImage,
+      'ABIRAMI N': abiraiImage,
+      'HARISH J': harishImage,
       'SIVA G': sivaImage,
-      'BAVINA M': barathImage, // Using Barath_Bavina for BAVINA M
+      'MOHAN V': manojImage, // Using MANOJ_A.webp for MOHAN V
+      'BAVINA M': barathImage,
       'VIGNESHWARAN K': vigneshImage,
       'PRABHUVELSUNDHAR S R': prabhuvelsundharImage,
       'SAKTHIVEL': sakthivelImage,
+      'SURYA R': suryaImage,
+      'NISHWATH FATHIMA M': nishwathImage,
       'MEGALA SAKTHI G': megalaImage,
       'ASWIN P': aswinImage,
       'MUKILANDRAN C D': mukilandrenImage,
+      'MANJU S': manjuImage,
       'PREM K': premImage,
+      'PARAMESWARAN S': prabhuvelsundharImage, // Using similar image for now
+      'MAARISH AADITH M': maarishImage,
+      'VARUNRAJ V': varunrajImage,
+      'NITHISH KUMAR S': nidharshanImage, // Using similar image for now
       'SOWMITHA S': sowmithaImage,
       'HARIPRASATH S': hariPrasathImage,
       'AKILAN K': akilanImage,
       'ANITHA M': anithaImage,
+      'ARAVIND A': aravindImage,
+      'GANESH MOORTHI K': gnanaprakashImage, // Using similar image for now
       'GNANAPRAKASH D T': gnanaprakashImage,
       'KAUSHIK KUMAR S R': kaushikImage,
       'NIDHARSHAN S S': nidharshanImage,
       'PADMALOSANA S': padmalosanaImage,
+      'POORNITHA V': poornithaImage,
       'PRAJIT AJAY S': prajithImage,
       'SATHISH S': sathishImage,
+      'SURESH C': sureshImage,
+      // Additional mappings for backward compatibility
+      'ABIRAMI': abiraiImage,
+      'HARISH': harishImage,
+      'SURYA': suryaImage,
+      'NISHWATH FATHIMA': nishwathImage,
+      'MANJU': manjuImage,
+      'MAARISH AADITH': maarishImage,
+      'VARUNRAJ': varunrajImage,
+      'POORNITHA': poornithaImage,
+      'SURESH': sureshImage,
     };
     
-    return imageMap[name] || memberAvatar;
+    return imageMap[name] || null;
   };
 
   const staffInCharge = [
@@ -82,7 +116,7 @@ const Team = () => {
     { name: 'BAVINA M', designation: 'Technical Director', linkedin: '#', image: getMemberImage('BAVINA M') },
     { name: 'VIGNESHWARAN K', designation: 'Technical Director', linkedin: '#', image: getMemberImage('VIGNESHWARAN K') },
     { name: 'PRABHUVELSUNDHAR S R', designation: 'Event Director', linkedin: '#', image: getMemberImage('PRABHUVELSUNDHAR S R') },
-    { name: 'SAKTHIVEL', designation: 'Event Director', linkedin: '#', image: getMemberImage('SAKTHIVEL') },
+    { name: 'SAKTHIVEL K', designation: 'Event Director', linkedin: '#', image: getMemberImage('SAKTHIVEL') },
     { name: 'SURYA R', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('SURYA R') },
     { name: 'NISHWATH FATHIMA M', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('NISHWATH FATHIMA M') },
     { name: 'MEGALA SAKTHI G', designation: 'Documentation Lead', linkedin: '#', image: getMemberImage('MEGALA SAKTHI G') },
@@ -155,7 +189,7 @@ const Team = () => {
                 <div className="member-avatar">
                   <img src={member.image} alt={member.name} className="member-avatar-img" />
                 </div>
-                <h3 className="member-name">{member.name}</h3>
+                <h3 className={`member-name ${member.name.length > 15 ? 'long-name' : ''}`}>{member.name}</h3>
                 <p className="member-designation">{member.designation}</p>
                 <a 
                   href={member.linkedin} 
@@ -249,28 +283,7 @@ const Team = () => {
             encouraging creativity, and building a community of future engineers who will shape 
             the world of tomorrow.
           </p>
-          <div className="mea-values">
-            <div className="value-card">
-              <span className="value-icon">🎯</span>
-              <h3>Innovation</h3>
-              <p>Encouraging creative thinking and problem-solving</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">🤝</span>
-              <h3>Collaboration</h3>
-              <p>Building strong networks and teamwork</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">🏆</span>
-              <h3>Excellence</h3>
-              <p>Striving for the highest standards</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">🌟</span>
-              <h3>Leadership</h3>
-              <p>Developing future engineering leaders</p>
-            </div>
-          </div>
+          
         </div>
       </section>
 

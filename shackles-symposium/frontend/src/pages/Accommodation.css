@@ -1,402 +1,409 @@
 .accommodation {
   min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #ffffff;
+  padding-top: 80px;
 }
 
 .accommodation-hero {
-  padding: 6rem 2rem 4rem;
   text-align: center;
-  background: linear-gradient(135deg, #1a0a14 0%, #000000 50%, #0a1a14 100%);
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #ff0040, #ff4080);
+  margin-bottom: 0;
 }
 
 .accommodation-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  color: var(--player-green);
-  margin-bottom: 1rem;
-  text-shadow: 0 0 30px rgba(10, 215, 161, 0.6);
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
 }
 
 .accommodation-subtitle {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
   letter-spacing: 1px;
 }
 
-.accommodation-info {
-  padding: 4rem 2rem;
-  background: #000000;
+.accommodation-main {
+  padding: 4rem 1rem;
+  background: #0a0a0a;
 }
 
-.info-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.info-content h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  color: var(--guard-pink);
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.info-desc {
-  font-size: 1.15rem;
-  color: var(--text-secondary);
-  line-height: 1.8;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 3rem;
-}
-
-.facility-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.highlight-card {
-  background: linear-gradient(135deg, rgba(10, 215, 161, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
-  border: 2px solid var(--player-green);
-  border-radius: 20px;
-  padding: 2.5rem 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.highlight-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--guard-pink);
-  box-shadow: 0 10px 40px rgba(10, 215, 161, 0.3);
-}
-
-.highlight-icon {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.highlight-card h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.4rem;
-  color: var(--player-green);
-  margin-bottom: 1rem;
-}
-
-.highlight-card p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.accommodation-details {
-  padding: 4rem 2rem;
-  background: linear-gradient(180deg, #000000 0%, #1a0a14 100%);
-}
-
-.details-container {
+.accommodation-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 3rem;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: start;
 }
 
-.details-card,
-.amenities-card {
-  background: linear-gradient(135deg, rgba(227, 27, 108, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
-  border: 2px solid var(--guard-pink);
+/* Rules Section */
+.rules-section {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
   border-radius: 20px;
   padding: 3rem;
+  border: 2px solid #ff0040;
+  box-shadow: 0 10px 30px rgba(255, 0, 64, 0.2);
 }
 
-.details-card h2,
-.amenities-card h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  color: var(--guard-pink);
+.rules-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
   margin-bottom: 2.5rem;
+  color: #ff0040;
+  text-shadow: 0 0 10px rgba(255, 0, 64, 0.5);
+  letter-spacing: 3px;
 }
 
-.detail-item {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(10, 215, 161, 0.2);
-}
-
-.detail-item:last-child {
-  border-bottom: none;
-}
-
-.detail-label {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-
-.detail-icon {
-  font-size: 1.5rem;
-}
-
-.detail-label strong {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--player-green);
-  font-size: 1.1rem;
-}
-
-.detail-item p {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  padding-left: 2.3rem;
-}
-
-.amenities-list {
-  list-style: none;
-  padding: 0;
+.rules-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.amenities-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.check-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: var(--player-green);
-  color: var(--bg-primary);
-  border-radius: 50%;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.accommodation-rules {
-  padding: 4rem 2rem;
-  background: #000000;
-}
-
-.rules-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.rules-container h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  color: var(--vip-gold);
-  margin-bottom: 3rem;
-  text-align: center;
-  text-shadow: 0 0 20px rgba(255, 191, 0, 0.5);
-}
-
-.rules-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.rule-card {
-  background: linear-gradient(135deg, rgba(255, 191, 0, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
-  border: 2px solid var(--vip-gold);
-  border-radius: 20px;
-  padding: 2rem;
+.rule-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #ff0040;
   transition: all 0.3s ease;
 }
 
-.rule-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--player-green);
-  box-shadow: 0 10px 30px rgba(255, 191, 0, 0.3);
+.rule-item:hover {
+  background: rgba(255, 0, 64, 0.1);
+  transform: translateX(5px);
 }
 
 .rule-number {
+  background: linear-gradient(135deg, #ff0040, #ff4080);
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  background: var(--vip-gold);
-  color: var(--bg-primary);
-  border-radius: 50%;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rule-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+/* Registration Form Section */
+.registration-form-section {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 2px solid #4a9eff;
+  box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+  position: sticky;
+  top: 100px;
+}
+
+.accommodation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a9eff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.date-selection {
+  display: flex;
+  gap: 1rem;
+}
+
+.date-btn {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid #4a9eff;
+  background: transparent;
+  color: #4a9eff;
+  border-radius: 12px;
   font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.date-btn:hover {
+  background: rgba(74, 158, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.date-btn.active {
+  background: linear-gradient(135deg, #4a9eff, #2575fc);
+  color: white;
+  box-shadow: 0 5px 15px rgba(74, 158, 255, 0.4);
+}
+
+.selected-indicator {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.selected-dates-info {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: rgba(74, 158, 255, 0.1);
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  border-radius: 8px;
+  color: #4a9eff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gender-selection {
+  margin-bottom: 1rem;
+}
+
+.gender-select {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 2px solid #4a9eff;
+  background: rgba(74, 158, 255, 0.1);
+  color: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gender-select:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
+}
+
+.gender-select option {
+  background: #1a1a1a;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Checkbox Styling */
+.rules-checkbox {
+  margin: 1rem 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4a9eff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
-.rule-card p {
-  color: var(--text-secondary);
-  line-height: 1.7;
-  font-size: 1.05rem;
-  padding-top: 0.5rem;
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background: linear-gradient(135deg, #4a9eff, #2575fc);
+  border-color: #2575fc;
 }
 
+.checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  color: white;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+/* Register Button */
+.register-btn {
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.register-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(247, 147, 30, 0.4);
+}
+
+/* Contact Section */
 .accommodation-contact {
-  padding: 4rem 2rem;
-  background: linear-gradient(180deg, #000000 0%, #0a1a14 100%);
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  padding: 4rem 1rem;
 }
 
 .contact-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
 .contact-container h2 {
-  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
-  color: var(--player-green);
+  font-weight: 900;
   margin-bottom: 3rem;
-  text-shadow: 0 0 20px rgba(10, 215, 161, 0.5);
+  color: #4a9eff;
+  text-shadow: 0 0 10px rgba(74, 158, 255, 0.5);
 }
 
 .coordinators-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  margin-bottom: 2.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .coordinator-card {
-  background: linear-gradient(135deg, rgba(10, 215, 161, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
-  border: 3px solid var(--player-green);
-  border-radius: 25px;
-  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid #4a9eff;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
 .coordinator-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--guard-pink);
-  box-shadow: 0 15px 50px rgba(10, 215, 161, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(74, 158, 255, 0.3);
 }
 
 .coordinator-icon {
-  font-size: 5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .coordinator-card h3 {
-  font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
-  color: var(--player-green);
+  color: #4a9eff;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .coordinator-name {
-  font-size: 1.3rem;
-  color: var(--text-primary);
-  font-weight: 600;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
 }
 
 .coordinator-phone {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: var(--player-green);
-  color: var(--bg-primary);
-  border-radius: 50px;
+  color: #4a9eff;
   text-decoration: none;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.1rem;
   font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .coordinator-phone:hover {
-  background: transparent;
-  color: var(--player-green);
-  border: 2px solid var(--player-green);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(10, 215, 161, 0.4);
+  background: rgba(74, 158, 255, 0.2);
+  transform: scale(1.05);
 }
 
 .phone-icon {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .contact-note {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
+  color: #b0b0b0;
   font-style: italic;
   margin-top: 2rem;
 }
 
-.accommodation-cta {
-  padding: 5rem 2rem;
-  text-align: center;
-  background: #000000;
-}
-
-.accommodation-cta h2 {
-  font-family: 'GameOfSquids', sans-serif;
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--guard-pink);
-  margin-bottom: 1rem;
-  text-shadow: 0 0 20px rgba(227, 27, 108, 0.6);
-}
-
-.accommodation-cta p {
-  font-size: 1.3rem;
-  color: var(--text-secondary);
-  margin-bottom: 3rem;
-}
-
-.btn-register-accommodation {
-  display: inline-block;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  padding: 1.2rem 3.5rem;
-  background: var(--player-green);
-  color: var(--bg-primary);
-  border: 2px solid var(--player-green);
-  border-radius: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 30px rgba(10, 215, 161, 0.4);
-}
-
-.btn-register-accommodation:hover {
-  background: transparent;
-  color: var(--player-green);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(10, 215, 161, 0.6);
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .facility-highlights {
+  .accommodation-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
-
-  .details-container {
-    grid-template-columns: 1fr;
+  
+  .registration-form-section {
+    position: static;
   }
-
-  .rules-grid {
-    grid-template-columns: 1fr;
+  
+  .accommodation-title {
+    font-size: 2.5rem;
   }
-
+  
+  .rules-section,
+  .registration-form-section {
+    padding: 2rem;
+  }
+  
+  .rules-title {
+    font-size: 2rem;
+  }
+  
+  .date-selection {
+    flex-direction: column;
+  }
+  
+  .date-btn {
+    flex: none;
+    width: 100%;
+  }
+  
   .coordinators-grid {
     grid-template-columns: 1fr;
   }

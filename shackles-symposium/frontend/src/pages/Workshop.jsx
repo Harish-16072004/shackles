@@ -9,7 +9,7 @@ const Workshop = () => {
       name: 'Additive Manufacturing Workshop',
       time: '10:00 AM - 1:00 PM',
       date: 'October 23, 2025',
-      description: 'Learn about 3D printing technologies, CAD design for additive manufacturing, and hands-on experience with 3D printers.',
+      description: 'An additive manufacturing workshop introduces the process of building three-dimensional objects layer-by-layer directly from a digital model. It typically covers various AM technologies, materials (polymers, metals), design principles like Design for Additive Manufacturing (DfAM), and post-processing techniques. Participants learn how AM enables design complexity, rapid prototyping, and the production of customized or lightweight functional parts across multiple industries.',
       topics: [
         'Introduction to Additive Manufacturing',
         'Types of 3D Printing Technologies',
@@ -18,18 +18,18 @@ const Workshop = () => {
         'Hands-on 3D Printer Operation',
         'Post-Processing Techniques',
       ],
-      trainer: 'Industry Expert from Leading 3D Printing Company',
+      trainer: 'Dr.S.M.Siavgami',
       coordinator: {
         name: 'Workshop Team',
-        phone: '+91 9514585887',
+        phone: '+91 9342034079',
       },
     },
     {
       id: 2,
-      name: 'IoT (Internet of Things) Workshop',
+      name: 'Smart Manufacturing',
       time: '2:00 PM - 5:00 PM',
       date: 'October 23, 2025',
-      description: 'Explore the world of IoT with hands-on projects using sensors, microcontrollers, and cloud integration.',
+      description: 'A smart manufacturing workshop explores the integration of advanced technologies like AI, IoT, and data analytics into production systems. Participants will learn how to leverage these tools to optimize operations, enhance efficiency, improve quality control, and enable real-time decision-making, ultimately driving the shift towards a more connected and adaptive industrial landscape.',
       topics: [
         'Introduction to IoT Architecture',
         'Arduino and ESP32 Programming',
@@ -38,10 +38,10 @@ const Workshop = () => {
         'Building Smart Home Automation',
         'Real-world IoT Applications',
       ],
-      trainer: 'Certified IoT Professional',
+      trainer: 'Expert Team',
       coordinator: {
         name: 'Workshop Team',
-        phone: '+91 9384583077',
+        phone: '+91 9342034079',
       },
     },
   ];
@@ -103,45 +103,7 @@ const Workshop = () => {
           ))}
         </div>
       </section>
-
-      <section className="workshop-pricing">
-        <div className="pricing-container">
-          <div className="pricing-option">
-            <h3>Workshops Only</h3>
-            <div className="price">
-              <span className="currency">₹</span>
-              <span className="amount">199</span>
-            </div>
-            <ul className="pricing-features">
-              <li>✓ Both workshops included</li>
-              <li>✓ Hands-on training</li>
-              <li>✓ Workshop certificates</li>
-              <li>✓ Lunch included</li>
-              <li>✓ Learning materials provided</li>
-            </ul>
-            <Link to="/register" className="btn-pricing">Register</Link>
-          </div>
-
-          <div className="pricing-option featured">
-            <div className="featured-tag">Best Value</div>
-            <h3>Combined Package</h3>
-            <div className="price">
-              <span className="currency">₹</span>
-              <span className="amount">499</span>
-            </div>
-            <ul className="pricing-features">
-              <li>✓ Both workshops</li>
-              <li>✓ All 11 events access</li>
-              <li>✓ Event & workshop certificates</li>
-              <li>✓ Lunch & refreshments</li>
-              <li>✓ Exclusive goodies</li>
-              <li>✓ Complete symposium experience</li>
-            </ul>
-            <Link to="/register" className="btn-pricing">Register</Link>
-          </div>
-        </div>
-      </section>
-
+      
       <section className="workshop-benefits">
         <h2>Why Attend Our Workshops?</h2>
         <div className="benefits-grid">

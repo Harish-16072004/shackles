@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Home.css';
-import aboutIcon from '../assets/images/about-icon.png';
+import acgcetLogo from '../assets/images/ACGCET.webp';
+import departmentLogo from '../assets/images/DEPARTMENT.webp';
+import shacklesLogo from '../assets/images/ASSOLOGO.webp';
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -200,7 +202,7 @@ function Home() {
           <Link to="/events/non-technical" className="category-card non-technical">
             <span className="category-symbol">○</span>
             <h3>Non-Technical Events</h3>
-            <p>3 Strategy Games</p>
+            <p>4 Strategy Games</p>
             <span className="category-badge">Circle</span>
           </Link>
 
@@ -237,7 +239,7 @@ function Home() {
             </div>
         
             <div className="stat-box">
-              <span className="stat-number">11</span>
+              <span className="stat-number">12</span>
               <span className="stat-label">Events</span>
             </div>
             <div className="stat-box">
@@ -268,7 +270,7 @@ function Home() {
           {/* Institution */}
           <div className="organizer-card">
             <div className="organizer-icon">
-              <img src={aboutIcon} alt="Institution" className="organizer-img" />
+              <img src={acgcetLogo} alt="ACGCET" className="organizer-img" />
             </div>
             <h3>Alagappa Chettiar Government College of Engineering and Technology</h3>
             <p>
@@ -285,7 +287,7 @@ function Home() {
           {/* Department */}
           <div className="organizer-card">
             <div className="organizer-icon">
-              <img src={aboutIcon} alt="Department" className="organizer-img" />
+              <img src={departmentLogo} alt="Department of Mechanical Engineering" className="organizer-img" />
             </div>
             <h3>Department of Mechanical Engineering</h3>
             <p>
@@ -296,7 +298,7 @@ function Home() {
           {/* SHACKLES */}
           <div className="organizer-card">
             <div className="organizer-icon">
-              <img src={aboutIcon} alt="SHACKLES" className="organizer-img" />
+              <img src={shacklesLogo} alt="SHACKLES Association Logo" className="organizer-img" />
             </div>
             <h3>SHACKLES 25-26: The Ultimate Test</h3>
             <p>

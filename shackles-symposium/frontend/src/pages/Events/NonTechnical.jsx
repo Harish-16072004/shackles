@@ -56,7 +56,25 @@ const NonTechnical = () => {
       coordinator: {
         name: 'Naveen',
         phone: '+91 9361428799',
-      },     prizes: '1st: ₹4000 | 2nd: ₹2500 | 3rd: ₹1500',
+      },
+    },
+    {
+      id: 4,
+      name: 'Dalgona Candy',
+      symbol: '○',
+      description: 'Extract the shape from dalgona candy without breaking it - inspired by the famous Squid Game challenge!',
+      rules: [
+        'Individual participation',
+        'Choose your shape: circle, triangle, star, or umbrella',
+        'Use provided needle to carefully extract the shape',
+        'Breaking the shape results in elimination',
+        'Time limit: 10 minutes',
+        'Clean extraction required for winning',
+      ],
+      coordinator: {
+        name: 'Naveen',
+        phone: '+91 9361428799',
+      },
     },
   ];
 
@@ -65,7 +83,7 @@ const NonTechnical = () => {
       <section className="technical-hero">
         <div className="hero-symbol non-tech-symbol">○</div>
         <h1 className="technical-title non-tech-title">Non-Technical Events</h1>
-        <p className="technical-subtitle">3 Fun-Filled Events for Everyone</p>
+        <p className="technical-subtitle">4 Fun-Filled Events for Everyone</p>
         <Link to="/events" className="btn-back">
           ← Back to Events
         </Link>
@@ -85,9 +103,11 @@ const NonTechnical = () => {
               <div className="event-footer">
                 <div className="event-coordinator">
                   <span className="coordinator-icon">📞</span>
-                  <div>
+                  <div className="coordinator-info">
                     <p className="coordinator-name">{event.coordinator.name}</p>
-                    <p className="coordinator-phone">{event.coordinator.phone}</p>
+                    <a href={`tel:${event.coordinator.phone}`} className="coordinator-phone">
+                      {event.coordinator.phone}
+                    </a>
                   </div>
                 </div>
                 <button className="btn-view-details btn-non-tech">View Details</button>
@@ -149,53 +169,73 @@ const NonTechnical = () => {
       <style jsx>{`
         .non-tech-symbol,
         .non-tech-title {
-          color: var(--player-green) !important;
-          text-shadow: 0 0 30px rgba(10, 215, 161, 0.6) !important;
+          color: #3498db !important;
+          text-shadow: 0 0 30px rgba(52, 152, 219, 0.6) !important;
+        }
+
+        .technical-hero {
+          background: linear-gradient(135deg, #0a1a2d 0%, #000000 50%, #0a1a2d 100%) !important;
         }
 
         .event-card.non-technical {
-          border-color: var(--player-green);
-          background: linear-gradient(135deg, rgba(10, 215, 161, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
+          border-color: #3498db !important;
+          background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(0, 0, 0, 0.9) 100%) !important;
         }
 
         .event-card.non-technical::before {
-          background: radial-gradient(circle, rgba(10, 215, 161, 0.1) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(52, 152, 219, 0.15) 0%, transparent 70%) !important;
         }
 
         .event-card.non-technical:hover {
-          border-color: var(--guard-pink);
-          box-shadow: 0 20px 60px rgba(10, 215, 161, 0.5);
+          border-color: #5dade2 !important;
+          box-shadow: 0 20px 60px rgba(52, 152, 219, 0.4) !important;
         }
 
         .event-card.non-technical .event-symbol {
-          color: var(--player-green);
+          color: #3498db !important;
+          text-shadow: 0 0 20px rgba(52, 152, 219, 0.5) !important;
         }
 
         .event-card.non-technical:hover .event-symbol {
-          color: var(--guard-pink);
+          color: #5dade2 !important;
+          text-shadow: 0 0 30px rgba(52, 152, 219, 0.8) !important;
+        }
+
+        .event-card.non-technical .event-coordinator {
+          background: rgba(52, 152, 219, 0.1) !important;
+          border-color: rgba(52, 152, 219, 0.3) !important;
+        }
+
+        .event-card.non-technical .event-coordinator:hover {
+          background: rgba(52, 152, 219, 0.15) !important;
+          border-color: rgba(52, 152, 219, 0.5) !important;
+          transform: translateY(-2px) !important;
+          box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2) !important;
         }
 
         .btn-non-tech {
-          background: var(--player-green) !important;
-          border-color: var(--player-green) !important;
+          background: #3498db !important;
+          border: 2px solid #3498db !important;
+          color: white !important;
+          box-shadow: 0 0 20px rgba(52, 152, 219, 0.3) !important;
         }
 
         .btn-non-tech:hover {
           background: transparent !important;
-          color: var(--player-green) !important;
-          box-shadow: 0 5px 20px rgba(10, 215, 161, 0.5) !important;
+          color: #3498db !important;
+          box-shadow: 0 5px 25px rgba(52, 152, 219, 0.5) !important;
         }
 
         .non-tech-modal-symbol {
-          color: var(--player-green) !important;
+          color: #3498db !important;
         }
 
         .modal-content {
-          border-color: var(--player-green) !important;
+          border-color: #3498db !important;
         }
 
         .modal-rules li::before {
-          color: var(--player-green) !important;
+          color: #3498db !important;
         }
       `}</style>
     </div>

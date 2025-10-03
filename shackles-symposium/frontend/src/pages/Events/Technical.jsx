@@ -8,7 +8,7 @@ const Technical = () => {
   const technicalEvents = [
     {
       id: 1,
-      name: 'Paper Presentation',
+      name: 'INNOVATION DUEL',
       symbol: '■',
       description: 'Present innovative research papers and engineering solutions.',
       rules: [
@@ -25,7 +25,7 @@ const Technical = () => {
     },
     {
       id: 2,
-      name: 'Technical Quiz',
+      name: 'BRAIN BUSTERS',
       symbol: '■',
       description: 'Test your mechanical engineering knowledge across multiple rounds.',
       rules: [
@@ -42,7 +42,7 @@ const Technical = () => {
     },
     {
       id: 3,
-      name: 'CAD Modelling',
+      name: 'DIMENSIONS FORGE',
       symbol: '■',
       description: 'Design and model engineering components using CAD software.',
       rules: [
@@ -53,13 +53,13 @@ const Technical = () => {
         'Own laptop required',
       ],
       coordinator: {
-        name: 'Praveen',
+        name: 'Kumaran',
         phone: '+91 9514585887',
       },
     },
     {
       id: 4,
-      name: 'Water Rocketry',
+      name: 'SKY SHOT',
       symbol: '■',
       description: 'Build and launch water rockets to achieve maximum distance and accuracy.',
       rules: [
@@ -70,13 +70,13 @@ const Technical = () => {
         'Safety protocols mandatory',
       ],
       coordinator: {
-        name: 'Vignesh',
+        name: 'Muthuvel',
         phone: '+91 9361428799',
       },
     },
     {
       id: 5,
-      name: 'Motor Montage',
+      name: 'ENGINE GAMBLE',
       symbol: '■',
       description: 'Disassemble and reassemble motors against the clock.',
       rules: [
@@ -87,13 +87,13 @@ const Technical = () => {
         'Fastest team wins',
       ],
       coordinator: {
-        name: 'Sanjay',
+        name: 'Hariprasath A',
         phone: '+91 9384583077',
       },
     },
     {
       id: 6,
-      name: 'Mech O Mania',
+      name: 'MECH SHOWDOWN',
       symbol: '■',
       description: 'Multiple mini-challenges testing diverse mechanical skills.',
       rules: [
@@ -104,7 +104,7 @@ const Technical = () => {
         'Team with highest points wins',
       ],
       coordinator: {
-        name: 'Shobith',
+        name: 'Anees Ahamed T',
         phone: '+91 8098726547',
       },
     },
@@ -135,9 +135,11 @@ const Technical = () => {
               <div className="event-footer">
                 <div className="event-coordinator">
                   <span className="coordinator-icon">📞</span>
-                  <div>
+                  <div className="coordinator-info">
                     <p className="coordinator-name">{event.coordinator.name}</p>
-                    <p className="coordinator-phone">{event.coordinator.phone}</p>
+                    <a href={`tel:${event.coordinator.phone}`} className="coordinator-phone">
+                      {event.coordinator.phone}
+                    </a>
                   </div>
                 </div>
                 <button className="btn-view-details">View Details</button>

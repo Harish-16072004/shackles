@@ -133,8 +133,12 @@ const Special = () => {
       <style jsx>{`
         .special-symbol,
         .special-title {
-          color: var(--vip-gold) !important;
-          text-shadow: 0 0 30px rgba(255, 191, 0, 0.6) !important;
+          color: #2ecc71 !important;
+          text-shadow: 0 0 30px rgba(46, 204, 113, 0.6) !important;
+        }
+
+        .technical-hero {
+          background: linear-gradient(135deg, #0a2d0a 0%, #000000 50%, #0a2d0a 100%) !important;
         }
 
         .special-container {
@@ -144,54 +148,69 @@ const Special = () => {
         }
 
         .event-card.special {
-          border-color: var(--vip-gold);
-          background: linear-gradient(135deg, rgba(255, 191, 0, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
+          border-color: #2ecc71 !important;
+          background: linear-gradient(135deg, rgba(46, 204, 113, 0.08) 0%, rgba(0, 0, 0, 0.9) 100%) !important;
         }
 
         .event-card.special::before {
-          background: radial-gradient(circle, rgba(255, 191, 0, 0.1) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(46, 204, 113, 0.15) 0%, transparent 70%) !important;
         }
 
         .event-card.special:hover {
-          border-color: var(--player-green);
-          box-shadow: 0 20px 60px rgba(255, 191, 0, 0.5);
+          border-color: #58d68d !important;
+          box-shadow: 0 20px 60px rgba(46, 204, 113, 0.4) !important;
         }
 
         .event-card.special .event-symbol {
-          color: var(--vip-gold);
+          color: #2ecc71 !important;
+          text-shadow: 0 0 20px rgba(46, 204, 113, 0.5) !important;
         }
 
         .event-card.special:hover .event-symbol {
-          color: var(--player-green);
+          color: #58d68d !important;
+          text-shadow: 0 0 30px rgba(46, 204, 113, 0.8) !important;
+        }
+
+        .event-card.special .event-coordinator {
+          background: rgba(46, 204, 113, 0.1) !important;
+          border-color: rgba(46, 204, 113, 0.3) !important;
+        }
+
+        .event-card.special .event-coordinator:hover {
+          background: rgba(46, 204, 113, 0.15) !important;
+          border-color: rgba(46, 204, 113, 0.5) !important;
+          transform: translateY(-2px) !important;
+          box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2) !important;
         }
 
         .btn-special {
-          background: var(--vip-gold) !important;
-          border-color: var(--vip-gold) !important;
-          color: var(--bg-primary) !important;
+          background: #2ecc71 !important;
+          border: 2px solid #2ecc71 !important;
+          color: white !important;
+          box-shadow: 0 0 20px rgba(46, 204, 113, 0.3) !important;
         }
 
         .btn-special:hover {
           background: transparent !important;
-          color: var(--vip-gold) !important;
-          box-shadow: 0 5px 20px rgba(255, 191, 0, 0.5) !important;
+          color: #2ecc71 !important;
+          box-shadow: 0 5px 25px rgba(46, 204, 113, 0.5) !important;
         }
 
         .special-modal-symbol {
-          color: var(--vip-gold) !important;
+          color: #2ecc71 !important;
         }
 
         .modal-content {
-          border-color: var(--vip-gold) !important;
+          border-color: #2ecc71 !important;
         }
 
         .modal-rules li::before {
-          color: var(--vip-gold) !important;
+          color: #2ecc71 !important;
         }
 
         .special-prizes {
-          background: rgba(255, 191, 0, 0.15) !important;
-          border-color: rgba(255, 191, 0, 0.4) !important;
+          background: rgba(46, 204, 113, 0.15) !important;
+          border-color: rgba(46, 204, 113, 0.4) !important;
         }
 
         @media (max-width: 768px) {

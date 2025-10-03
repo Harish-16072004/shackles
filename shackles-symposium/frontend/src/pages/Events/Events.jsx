@@ -16,7 +16,7 @@ const Events = () => {
         <h1 className="events-title">
           <span className="glitch-events" data-text="EVENTS">EVENTS</span>
         </h1>
-        <p className="events-subtitle">11 Challenges. 3 Categories. Infinite Possibilities.</p>
+        <p className="events-subtitle">12 Challenges. 3 Categories. Infinite Possibilities.</p>
       </section>
 
       <section className="events-categories">
@@ -28,12 +28,12 @@ const Events = () => {
             </div>
             <p className="category-count">6 Events</p>
             <div className="category-list">
-              <span>Paper Presentation</span>
-              <span>Technical Quiz</span>
-              <span>CAD Modelling</span>
-              <span>Water Rocketry</span>
-              <span>Motor Montage</span>
-              <span>Mech O Mania</span>
+              <span>INNOVATION DUEL</span>
+              <span>BRAIN BUSTERS</span>
+              <span>SKY SHOT</span>
+              <span>MECH SHOWDOWN</span>
+              <span>ENGINE GAMBLE</span>
+              <span>DIMENSIONS FORGE</span>
             </div>
             <div className="category-cta">
               <span>Explore</span>
@@ -46,11 +46,12 @@ const Events = () => {
               <span className="category-icon">○</span>
               <h2>Non-Technical Events</h2>
             </div>
-            <p className="category-count">3 Events</p>
+            <p className="category-count">4 Events</p>
             <div className="category-list">
-              <span>IPL Auction</span>
-              <span>Kollywood Quiz</span>
-              <span>Red Light Green Light</span>
+              <span>IPL AUCTION</span>
+              <span>KOLLYWOOD QUIZ</span>
+              <span>RED LIGHT GREEN LIGHT</span>
+              <span>DALGONA CANDY</span>
             </div>
             <div className="category-cta">
               <span>Explore</span>
@@ -65,8 +66,8 @@ const Events = () => {
             </div>
             <p className="category-count">2 Events</p>
             <div className="category-list">
-              <span>Idea Pitching</span>
-              <span>Robo Soccer</span>
+              <span>VISION TRIAL</span>
+              <span>ROBO RUMBLE</span>
             </div>
             <div className="category-cta">
               <span>Explore</span>
@@ -79,12 +80,12 @@ const Events = () => {
       <section className="events-info">
         <div className="info-container">
           <div className="info-card">
-            <h3>📅 Event Dates</h3>
-            <p>October 23-24, 2025</p>
+            <h3>📅 Event Date</h3>
+            <p>October 24, 2025</p>
           </div>
           <div className="info-card">
             <h3>💰 Registration Fee</h3>
-            <p>₹299 for all events</p>
+            <p>₹299</p>
           </div>
         </div>
       </section>

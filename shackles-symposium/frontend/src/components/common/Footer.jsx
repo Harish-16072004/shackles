@@ -30,11 +30,17 @@ const Footer = () => {
           <div className="contact-info">
             <p>
               <strong>General Queries:</strong><br />
-              Killivalavan S: <a href="tel:+919514585887">+91 9514585887</a>
+              Killivalavan S: <a href="tel:+916382853181">+91 63828 53181</a><br />
+              Abirami N: <a href="tel:+916369234314">+91 63692 34314</a>
             </p>
             <p>
-              <strong>Registration Support:</strong><br />
-              Abirami N: <a href="tel:+919384583077">+91 9384583077</a>
+              <strong>Event Queries:</strong><br />
+              Sakthivel K: <a href="tel:+919384583077">+91 93845 83077</a><br />
+              Prabhuvelsundhar S R: <a href="tel:+919600463229">+91 96004 63229</a>
+            </p>
+            <p>
+              <strong>Registration Queries:</strong><br />
+              Harish J: <a href="tel:+917305432775">+91 73054 32775</a>
             </p>
             <p>
               <strong>Email:</strong><br />
@@ -75,11 +81,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-container">
-          <p>&copy; 2025 SHACKLES. All rights reserved.</p>
-          <p>
-            Mechanical Engineering Association<br />
-            Alagappa Chettiar Government College of Engineering & Technology
-          </p>
+          <p>&copy; 2025 MECHANICAL ENGINEERING ASSOCIATION. All rights reserved.</p>
         </div>
       </div>
     </footer>

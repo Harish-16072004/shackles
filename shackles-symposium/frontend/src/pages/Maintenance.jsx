@@ -44,11 +44,11 @@ const Maintenance = () => {
         {/* Main Message */}
         <div className="maintenance-message">
           <h1 className="maintenance-title">SYSTEM UNDER MAINTENANCE</h1>
-          <div className="maintenance-subtitle">게임이 곧 시작됩니다</div>
+          
           <div className="maintenance-subtitle-en">The Game Will Begin Soon</div>
         </div>
 
-        {/* Status Information */}
+        {/* Status Information 
         <div className="maintenance-info">
           <div className="info-card">
             <div className="info-icon">⚙️</div>
@@ -72,7 +72,7 @@ const Maintenance = () => {
           </div>
         </div>
 
-        {/* Timeline */}
+        Timeline 
         <div className="maintenance-timeline">
           <h3>Expected Timeline</h3>
           <div className="timeline-item">
@@ -85,7 +85,7 @@ const Maintenance = () => {
           </div>
         </div>
 
-        {/* Contact Information */}
+        Contact Information 
         <div className="maintenance-contact">
           <h3>Need Help?</h3>
           <p>For urgent inquiries, please contact our support team</p>
@@ -100,21 +100,20 @@ const Maintenance = () => {
         </div>
 
         {/* Game Reference */}
-        <div className="maintenance-footer">
+        {/* <div className="maintenance-footer">
           <div className="game-number">게임 번호: 001</div>
           <div className="game-status">PLAYER STATUS: WAITING</div>
-        </div>
+        </div> */}
       </div>
-
-      {/* Animated Elements */}
-      <div className="floating-shapes">
+        {/* End Main Content */}
+      {/* <div className="floating-shapes">
         <div className="shape shape-1">□</div>
         <div className="shape shape-2">△</div>
         <div className="shape shape-3">○</div>
         <div className="shape shape-4">□</div>
         <div className="shape shape-5">△</div>
         <div className="shape shape-6">○</div>
-      </div>
+      </div> */}
     </div>
   );
 };

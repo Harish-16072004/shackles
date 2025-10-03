@@ -64,7 +64,7 @@ const Header = () => {
           ) : (
             <>
               <Link to="/maintenance" onClick={closeMenu} className="btn-login maintenance-btn">
-                Login (Coming Soon)
+                Login
               </Link>
             </>
           )}
