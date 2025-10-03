@@ -62,8 +62,8 @@ const Events = () => {
             </div>
             <p className="category-count">4 Events</p>
             <div className="category-list">
-              <span>IPL AUCTION</span>
-              <span>KOLLYWOOD QUIZ</span>
+              <span>SURVIVAL BID</span>
+              <span>FILM QUEST</span>
               <span>RED LIGHT GREEN LIGHT</span>
               <span>DALGONA CANDY</span>
             </div>
