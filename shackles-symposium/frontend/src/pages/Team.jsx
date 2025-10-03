@@ -3,6 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import './Team.css';
 
 // Import team member images
+import ganeshImage from '../assets/images/ganesh.jpg';
+import nithishImage from '../assets/images/nithish.png';
+import parameshwaranImage from '../assets/images/paramesh.jpg';
 import abiraiImage from '../assets/images/ABIRAMI.webp';
 import akilanImage from '../assets/images/AKILAN AK.webp';
 import anithaImage from '../assets/images/Anitha_M.webp';
@@ -36,9 +39,7 @@ import sureshImage from '../assets/images/SURESH.webp';
 import suryaImage from '../assets/images/SURYA.webp';
 import varunrajImage from '../assets/images/VARUNRAJ.webp';
 import vigneshImage from '../assets/images/Vignesh.webp';
-import ganeshImage from '../assets/images/ganesh.jpg';
-import nithishImage from '../assets/images/nithish.png';
-import parameshwaranImage from '../assets/images/paramesh.jpg';
+
 
 
 const Team = () => {
@@ -67,7 +68,7 @@ const Team = () => {
       'ABIRAMI N': abiraiImage,
       'HARISH J': harishImage,
       'SIVA G': sivaImage,
-      'MOHAN V': manojImage, // Using MANOJ_A.webp for MOHAN V
+      'MOHAN V': manojImage, 
       'BAVINA M': barathImage,
       'VIGNESHWARAN K': vigneshImage,
       'PRABUVELSUNDHR SR': prabhuvelsundharImage,
@@ -79,16 +80,16 @@ const Team = () => {
       'MUKILANDRAN C D': mukilandrenImage,
       'MANJU S': manjuImage,
       'PREM K': premImage,
-      'PARAMESWARAN S': parameshwaranImage, // Using similar image for now
+      'PARAMESWARAN S': parameshwaranImage, 
       'MAARISH AADITH M': maarishImage,
       'VARUNRAJ V': varunrajImage,
-      'NITHISH KUMAR S': nithishImage, // Using similar image for now
+      'NITHISH KUMAR S': nithishImage, 
       'SOWMITHA S': sowmithaImage,
       'HARIPRASATH S': hariPrasathImage,
       'AKILAN K': akilanImage,
       'ANITHA M': anithaImage,
       'ARAVIND A': aravindImage,
-      'GANESH MOORTHI K': ganeshImage, // Using similar image for now
+      'GANESH MOORTHI K': ganeshImage, 
       'GNANAPRAKASH D T': gnanaprakashImage,
       'KAUSHIK KUMAR S R': kaushikImage,
       'NIDHARSHAN S S': nidharshanImage,
