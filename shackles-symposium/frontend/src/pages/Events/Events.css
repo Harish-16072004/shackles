@@ -334,3 +334,56 @@
   }
 }
 
+/* Maintenance Button Styles for Events */
+.maintenance-btn {
+  position: relative;
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff8a9b 50%, #4ecdc4 100%) !important;
+  color: #fff !important;
+  border: 2px solid #ff6b9d !important;
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.4) !important;
+  animation: maintenance-glow 2s ease-in-out infinite alternate;
+  opacity: 1 !important;
+}
+
+.maintenance-btn:hover {
+  background: linear-gradient(135deg, #4ecdc4 0%, #ffe66d 50%, #ff6b9d 100%) !important;
+  border-color: #4ecdc4 !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 30px rgba(78, 205, 196, 0.4) !important;
+}
+
+.maintenance-btn::before {
+  content: "🔧";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ffe66d;
+  color: #000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  animation: maintenance-pulse 1.5s infinite;
+}
+
+@keyframes maintenance-glow {
+  0% { 
+    box-shadow: 0 0 20px rgba(255, 107, 157, 0.4);
+  }
+  100% { 
+    box-shadow: 0 0 30px rgba(255, 107, 157, 0.7);
+  }
+}
+
+@keyframes maintenance-pulse {
+  0%, 100% { 
+    transform: scale(1);
+  }
+  50% { 
+    transform: scale(1.2);
+  }
+}
+
