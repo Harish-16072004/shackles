@@ -71,7 +71,7 @@ const Team = () => {
       'MOHAN V': manojImage, 
       'BAVINA M': barathImage,
       'VIGNESHWARAN K': vigneshImage,
-      'PRABUVELSUNDHR SR': prabhuvelsundharImage,
+      'PRABUVELSUNDAR SR': prabhuvelsundharImage,
       'SAKTHIVEL': sakthivelImage,
       'SURYA R': suryaImage,
       'NISHWATH FATHIMA M': nishwathImage,
@@ -108,11 +108,6 @@ const Team = () => {
       'VARUNRAJ': varunrajImage,
       'POORNITHA': poornithaImage,
       'SURESH': sureshImage,
-      // Additional mappings for Nithish and Ganesh with variations
-      'NITHISH KUMAR': nithishImage,
-      'NITHISH': nithishImage,
-      'GANESH MOORTHI': ganeshImage,
-      'GANESH': ganeshImage,
     };
     
     return imageMap[name] || null;
@@ -156,7 +151,7 @@ const Team = () => {
     { name: 'PARAMESWARAN S', role: 'Event Executive', linkedin: '#', image: getMemberImage('PARAMESWARAN S') },
     { name: 'MAARISH AADITH M', role: 'Event Executive', linkedin: '#', image: getMemberImage('MAARISH AADITH M') },
     { name: 'VARUNRAJ V', role: 'Design Executive', linkedin: '#', image: getMemberImage('VARUNRAJ V') },
-    { name: 'NITHISH KUMAR S', role: 'Design Executive', linkedin: '#', image: getMemberImage('NITHISH KUMAR S') },
+    { name: 'NITHISH KUMAR A', role: 'Design Executive', linkedin: '#', image: getMemberImage('NITHISH KUMAR S') },
     { name: 'SOWMITHA S', role: 'Media Executive', linkedin: '#', image: getMemberImage('SOWMITHA S') },
     { name: 'HARIPRASATH S', role: 'Media Executive', linkedin: '#', image: getMemberImage('HARIPRASATH S') },
   ];
@@ -317,7 +312,7 @@ const Team = () => {
       <section className="team-cta">
         <h2>Join Us at SHACKLES 2025</h2>
         <p>Be part of an unforgettable experience</p>
-        <Link to="/maintenance" className="btn-register-team maintenance-btn">
+        <Link to="/maintenance" className="btn-register-base btn-register-maintenance btn-register-large">
           Registration Coming Soon 🔧
         </Link>
       </section>

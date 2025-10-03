@@ -107,7 +107,7 @@ const Events = () => {
       <section className="events-cta">
         <h2>Ready to Compete?</h2>
         <p>Register now and showcase your skills</p>
-        <Link to="/register" className="btn-register-events">
+        <Link to="/register" className="btn-register-base btn-register-primary btn-register-large">
           Register Now
         </Link>
       </section>

@@ -1,3 +1,6 @@
+/* Import Normalized Button Styles */
+@import './components/common/Buttons.css';
+
 /* === CSS Variables === */
 :root {
   /* Squid Game Theme Colors */

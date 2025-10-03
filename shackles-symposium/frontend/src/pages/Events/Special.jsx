@@ -130,7 +130,7 @@ const Special = () => {
               </div>
             </div>
 
-            <Link to="/maintenance" className="btn-register-modal maintenance-btn">
+            <Link to="/maintenance" className="btn-register-base btn-register-maintenance">
               Registration Coming Soon 🔧
             </Link>
           </div>
@@ -140,7 +140,7 @@ const Special = () => {
       <section className="technical-cta">
         <h2>Ready for the Ultimate Challenge?</h2>
         <p>Registration opens soon - Backend system under development</p>
-        <Link to="/maintenance" className="btn-register-tech maintenance-btn">
+        <Link to="/maintenance" className="btn-register-base btn-register-maintenance btn-register-large">
           Registration Coming Soon 🔧
         </Link>
       </section>

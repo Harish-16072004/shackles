@@ -150,10 +150,10 @@ const Workshop = () => {
         <h2>Ready to Learn & Grow?</h2>
         <p>Limited seats available - Register now!</p>
         <div className="cta-actions">
-          <Link to="/register" className="btn-cta-primary">
+          <Link to="/register" className="btn-register-base btn-register-primary btn-register-large">
             Register Now
           </Link>
-          <Link to="/contact" className="btn-cta-secondary">
+          <Link to="/contact" className="btn-register-base btn-register-secondary btn-register-large">
             Have Questions?
           </Link>
         </div>

@@ -142,7 +142,7 @@ const Accommodation = () => {
                 </label>
               </div>
 
-              <button type="submit" className="register-btn maintenance-btn">
+              <button type="submit" className="btn-register-base btn-register-maintenance btn-register-full">
                 REGISTRATION COMING SOON 🔧
               </button>
             </form>

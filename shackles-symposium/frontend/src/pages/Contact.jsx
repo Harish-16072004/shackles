@@ -294,7 +294,7 @@ const Contact = () => {
       <section className="contact-cta">
         <h2>Ready to Join SHACKLES 2025?</h2>
         <p>Register now and be part of an amazing experience</p>
-        <Link to="/register" className="btn-register-contact">
+        <Link to="/register" className="btn-register-base btn-register-primary btn-register-large">
           Register Now
         </Link>
       </section>

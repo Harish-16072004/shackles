@@ -130,10 +130,10 @@ function Home() {
           <p className="hero-tagline">Let's Begin the Game</p>
 
           <div className="hero-actions">
-            <Link to="/maintenance" className="btn-hero-primary maintenance-btn">
+            <Link to="/maintenance" className="btn-register-base btn-register-maintenance btn-register-large">
               Registration Coming Soon 🔧
             </Link>
-            <Link to="/events" className="btn-hero-secondary">
+            <Link to="/events" className="btn-register-base btn-register-secondary btn-register-large">
               View Events
             </Link>
           </div>
@@ -263,10 +263,10 @@ function Home() {
             </div>
           </div>
           <div className="cta-actions">
-            <Link to="/maintenance" className="btn-cta-primary maintenance-btn">
+            <Link to="/maintenance" className="btn-register-base btn-register-maintenance btn-register-large">
               Registration Coming Soon 🔧
             </Link>
-            <Link to="/contact" className="btn-cta-secondary">
+            <Link to="/contact" className="btn-register-base btn-register-secondary btn-register-large">
               Learn More
             </Link>
           </div>
