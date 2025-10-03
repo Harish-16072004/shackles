@@ -97,7 +97,7 @@ const Accommodation = () => {
                     className={`date-btn ${selectedDates.includes('OCT 2') ? 'active' : ''}`}
                     onClick={() => handleDateToggle('OCT 22')}
                   >
-                    OCT 28
+                    OCT 22
                     {selectedDates.includes('OCT 22') && <span className="selected-indicator">✓</span>}
                   </button>
                   <button
