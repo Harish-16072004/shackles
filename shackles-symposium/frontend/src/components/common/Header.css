@@ -301,3 +301,40 @@ a.btn-login:focus {
     right: -100%;
   }
 }
+
+/* Maintenance Button Styles */
+.maintenance-btn,
+.maintenance-link {
+  position: relative;
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.maintenance-btn:hover,
+.maintenance-link:hover {
+  opacity: 1;
+  background: linear-gradient(45deg, #ff6b9d, #4ecdc4) !important;
+  transform: translateY(-2px);
+}
+
+.maintenance-btn::after,
+.maintenance-link::after {
+  content: "🔧";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.8rem;
+  background: #ff6b9d;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

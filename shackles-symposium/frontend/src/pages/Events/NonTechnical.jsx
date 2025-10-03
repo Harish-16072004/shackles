@@ -131,8 +131,8 @@ const NonTechnical = () => {
               </div>
             </div>
 
-            <Link to="/register" className="btn-register-modal">
-              Register for this Event
+            <Link to="/maintenance" className="btn-register-modal maintenance-btn">
+              Registration Coming Soon 🔧
             </Link>
           </div>
         </div>
@@ -140,9 +140,9 @@ const NonTechnical = () => {
 
       <section className="technical-cta">
         <h2>Ready to Have Fun?</h2>
-        <p>Register now for ₹299 and get access to all events</p>
-        <Link to="/register" className="btn-register-tech">
-          Register Now
+        <p>Registration opens soon - Backend system under development</p>
+        <Link to="/maintenance" className="btn-register-tech maintenance-btn">
+          Registration Coming Soon 🔧
         </Link>
       </section>
 

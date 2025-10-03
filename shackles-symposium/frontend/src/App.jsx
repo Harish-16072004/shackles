@@ -20,6 +20,7 @@ import EventManagement from './pages/Admin/EventManagement';
 import UserManagement from './pages/Admin/UserManagement';
 import PaymentVerification from './pages/Admin/PaymentVerification';
 import QRScannerPage from './pages/Admin/QRScannerPage';
+import Maintenance from './pages/Maintenance';
 import PrivateRoute from './components/PrivateRoute';
 import './App.css';
 
@@ -40,39 +41,22 @@ function App() {
               <Route path="/accommodation" element={<Accommodation />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/forgot-password" element={<ForgotPassword />} />
-              <Route path="/profile" element={
-                <PrivateRoute>
-                  <Profile />
-                </PrivateRoute>
-              } />
-              <Route path="/admin" element={
-                <PrivateRoute adminOnly>
-                  <AdminDashboard />
-                </PrivateRoute>
-              } />
-              <Route path="/admin/events" element={
-                <PrivateRoute adminOnly>
-                  <EventManagement />
-                </PrivateRoute>
-              } />
-              <Route path="/admin/users" element={
-                <PrivateRoute adminOnly>
-                  <UserManagement />
-                </PrivateRoute>
-              } />
-              <Route path="/admin/payments" element={
-                <PrivateRoute adminOnly>
-                  <PaymentVerification />
-                </PrivateRoute>
-              } />
-              <Route path="/admin/scanner" element={
-                <PrivateRoute adminOnly>
-                  <QRScannerPage />
-                </PrivateRoute>
-              } />
+              
+              {/* Authentication Routes - Redirected to Maintenance */}
+              <Route path="/login" element={<Maintenance />} />
+              <Route path="/register" element={<Maintenance />} />
+              <Route path="/forgot-password" element={<Maintenance />} />
+              <Route path="/profile" element={<Maintenance />} />
+              
+              {/* Admin Routes - Redirected to Maintenance */}
+              <Route path="/admin" element={<Maintenance />} />
+              <Route path="/admin/events" element={<Maintenance />} />
+              <Route path="/admin/users" element={<Maintenance />} />
+              <Route path="/admin/payments" element={<Maintenance />} />
+              <Route path="/admin/scanner" element={<Maintenance />} />
+              
+              {/* Maintenance Route */}
+              <Route path="/maintenance" element={<Maintenance />} />
             </Routes>
           </main>
           <Footer />

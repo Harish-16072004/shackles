@@ -49,12 +49,12 @@ const Header = () => {
 
           {isAuthenticated ? (
             <>
-              <Link to="/profile" onClick={closeMenu} className="profile-link">
-                <span className="user-name">{user?.name}</span>
+              <Link to="/maintenance" onClick={closeMenu} className="profile-link maintenance-link">
+                <span className="user-name">Account (Maintenance)</span>
               </Link>
               {(user?.role === 'admin' || user?.role === 'organizer') && (
-                <Link to="/admin" onClick={closeMenu} className="admin-link">
-                  Admin
+                <Link to="/maintenance" onClick={closeMenu} className="admin-link maintenance-link">
+                  Admin (Under Development)
                 </Link>
               )}
               <button onClick={handleLogout} className="btn-logout">
@@ -63,8 +63,8 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link to="/login" onClick={closeMenu} className="btn-login">
-                Login
+              <Link to="/maintenance" onClick={closeMenu} className="btn-login maintenance-btn">
+                Login (Coming Soon)
               </Link>
             </>
           )}

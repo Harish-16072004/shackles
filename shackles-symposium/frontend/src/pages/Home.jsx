@@ -113,8 +113,8 @@ function Home() {
           <p className="hero-tagline">Let's Begin the Game</p>
 
           <div className="hero-actions">
-            <Link to="/register" className="btn-hero-primary">
-              Register Now
+            <Link to="/maintenance" className="btn-hero-primary maintenance-btn">
+              Registration Coming Soon 🔧
             </Link>
             <Link to="/events" className="btn-hero-secondary">
               View Events
@@ -246,8 +246,8 @@ function Home() {
             </div>
           </div>
           <div className="cta-actions">
-            <Link to="/register" className="btn-cta-primary">
-              Enter The Game
+            <Link to="/maintenance" className="btn-cta-primary maintenance-btn">
+              Registration Coming Soon 🔧
             </Link>
             <Link to="/contact" className="btn-cta-secondary">
               Learn More
