@@ -57,7 +57,7 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://www.linkedin.com/company/mechanical-engineering-association-acgcet" 
+              href="https://www.linkedin.com/company/mechanical-engineering-association-of-acgcet" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"

@@ -3,62 +3,117 @@ import { Link } from 'react-router-dom';
 import './Team.css';
 import memberAvatar from '../assets/images/member-avatar.png';
 
+// Import team member images
+import akilanImage from '../assets/images/AKILAN AK.webp';
+import anithaImage from '../assets/images/Anitha_M.webp';
+import aswinImage from '../assets/images/aswin_padmanapan.webp';
+import barathImage from '../assets/images/Barath_Bavina.webp';
+import drRamanathanImage from '../assets/images/Dr_K_Ramanathan.webp';
+import gnanaprakashImage from '../assets/images/Gnanaprakash_DT.webp';
+import hariPrasathImage from '../assets/images/Hari_Prasath.webp';
+import kaushikImage from '../assets/images/Kaushik_Kumar.webp';
+import killivalanImage from '../assets/images/Killivalavan.webp';
+import megalaImage from '../assets/images/megala_shakthi.webp';
+import mukilandrenImage from '../assets/images/Mukilandren_C_D.webp';
+import nidharshanImage from '../assets/images/Nidharshan_Shanmuam.webp';
+import padmalosanaImage from '../assets/images/Padmalosana.webp';
+import prabhuvelsundharImage from '../assets/images/Prabuvelsundar_S_R.webp';
+import prajithImage from '../assets/images/PRAJITH AJAY.webp';
+import premImage from '../assets/images/Prem_Kumar.webp';
+import profJawaharImage from '../assets/images/Prof_V_Jawahar.webp';
+import sakthivelImage from '../assets/images/SAKTHIVEL_K.webp';
+import sathishImage from '../assets/images/Sathish.webp';
+import sivaImage from '../assets/images/Siva_G.webp';
+import sowmithaImage from '../assets/images/Sowmitha_SenthilKumar.webp';
+import vigneshImage from '../assets/images/Vignesh.webp';
+
 const Team = () => {
+  // Function to get team member image
+  const getMemberImage = (name) => {
+    const imageMap = {
+      'Dr.K.Ramanathan': drRamanathanImage,
+      'Prof.V.Jawahar': profJawaharImage,
+      'KILLIVALAVAN S': killivalanImage,
+      'SIVA G': sivaImage,
+      'BAVINA M': barathImage, // Using Barath_Bavina for BAVINA M
+      'VIGNESHWARAN K': vigneshImage,
+      'PRABHUVELSUNDHAR S R': prabhuvelsundharImage,
+      'SAKTHIVEL': sakthivelImage,
+      'MEGALA SAKTHI G': megalaImage,
+      'ASWIN P': aswinImage,
+      'MUKILANDRAN C D': mukilandrenImage,
+      'PREM K': premImage,
+      'SOWMITHA S': sowmithaImage,
+      'HARIPRASATH S': hariPrasathImage,
+      'AKILAN K': akilanImage,
+      'ANITHA M': anithaImage,
+      'GNANAPRAKASH D T': gnanaprakashImage,
+      'KAUSHIK KUMAR S R': kaushikImage,
+      'NIDHARSHAN S S': nidharshanImage,
+      'PADMALOSANA S': padmalosanaImage,
+      'PRAJIT AJAY S': prajithImage,
+      'SATHISH S': sathishImage,
+    };
+    
+    return imageMap[name] || memberAvatar;
+  };
+
   const staffInCharge = [
     {
       name: 'Dr.K.Ramanathan',
       designation: 'Head of Department',
       department: 'Mechanical Engineering',
+      image: getMemberImage('Dr.K.Ramanathan'),
     },
     {
       name: 'Prof.V.Jawahar',
       designation: 'Coordinator',
       department: 'Mechanical Engineering',
+      image: getMemberImage('Prof.V.Jawahar'),
     },
   ];
 
   const officeBearers = [
-    { name: 'KILLIVALAVAN S', designation: 'General Secretary',linkedin: '#' },
-    { name: 'ABIRAMI N', designation: 'General Secretary', linkedin: '#' },
-    { name: 'HARISH J', designation: 'Accounts Secretary', linkedin: '#' },
-    { name: 'SIVA G', designation: 'Accounts Secretary', linkedin: '#' },
-    { name: 'MOHAN V', designation: 'Technical Director', linkedin: '#' },
-    { name: 'BAVINA M', designation: 'Technical Director', linkedin: '#' },
-    { name: 'VIGNESHWARAN K', designation: 'Technical Director', linkedin: '#' },
-    { name: 'PRABHUVELSUNDHAR S R', designation: 'Event Director', linkedin: '#' },
-    { name: 'SAKTHIVEL', designation: 'Event Director', linkedin: '#' },
-    { name: 'SURYA R', designation: 'Design and Media Director', linkedin: '#' },
-    { name: 'NISHWATH FATHIMA M', designation: 'Design and Media Director', linkedin: '#' },
-    { name: 'MEGALA SAKTHI G', designation: 'Documentation Lead', linkedin: '#' },
+    { name: 'KILLIVALAVAN S', designation: 'General Secretary', linkedin: '#', image: getMemberImage('KILLIVALAVAN S') },
+    { name: 'ABIRAMI N', designation: 'General Secretary', linkedin: '#', image: getMemberImage('ABIRAMI N') },
+    { name: 'HARISH J', designation: 'Accounts Secretary', linkedin: '#', image: getMemberImage('HARISH J') },
+    { name: 'SIVA G', designation: 'Accounts Secretary', linkedin: '#', image: getMemberImage('SIVA G') },
+    { name: 'MOHAN V', designation: 'Technical Director', linkedin: '#', image: getMemberImage('MOHAN V') },
+    { name: 'BAVINA M', designation: 'Technical Director', linkedin: '#', image: getMemberImage('BAVINA M') },
+    { name: 'VIGNESHWARAN K', designation: 'Technical Director', linkedin: '#', image: getMemberImage('VIGNESHWARAN K') },
+    { name: 'PRABHUVELSUNDHAR S R', designation: 'Event Director', linkedin: '#', image: getMemberImage('PRABHUVELSUNDHAR S R') },
+    { name: 'SAKTHIVEL', designation: 'Event Director', linkedin: '#', image: getMemberImage('SAKTHIVEL') },
+    { name: 'SURYA R', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('SURYA R') },
+    { name: 'NISHWATH FATHIMA M', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('NISHWATH FATHIMA M') },
+    { name: 'MEGALA SAKTHI G', designation: 'Documentation Lead', linkedin: '#', image: getMemberImage('MEGALA SAKTHI G') },
   ];
 
   const executives = [
-    { name: 'ASWIN P', role: 'Student Executive', linkedin: '#' },
-    { name: 'MUKILANDRAN C D', role: 'Student Executive', linkedin: '#' },
-    { name: 'MANJU S', role: 'Financial Executive', linkedin: '#' },
-    { name: 'PREM K', role: 'Financial Executive', linkedin: '#' },
-    { name: 'PARAMESWARAN S', role: 'Event Executive', linkedin: '#' },
-    { name: 'MAARISH AADITH M', role: 'Event Executive', linkedin: '#' },
-    { name: 'VARUNRAJ V', role: 'Design Executive', linkedin: '#' },
-    { name: 'NITHISH KUMAR S', role: 'Design Executive', linkedin: '#' },
-    { name: 'SOWMITHA S', role: 'Media Executive', linkedin: '#' },
-    { name: 'HARIPRASATH S', role: 'Media Executive', linkedin: '#' },
-    
+    { name: 'ASWIN P', role: 'Student Executive', linkedin: '#', image: getMemberImage('ASWIN P') },
+    { name: 'MUKILANDRAN C D', role: 'Student Executive', linkedin: '#', image: getMemberImage('MUKILANDRAN C D') },
+    { name: 'MANJU S', role: 'Financial Executive', linkedin: '#', image: getMemberImage('MANJU S') },
+    { name: 'PREM K', role: 'Financial Executive', linkedin: '#', image: getMemberImage('PREM K') },
+    { name: 'PARAMESWARAN S', role: 'Event Executive', linkedin: '#', image: getMemberImage('PARAMESWARAN S') },
+    { name: 'MAARISH AADITH M', role: 'Event Executive', linkedin: '#', image: getMemberImage('MAARISH AADITH M') },
+    { name: 'VARUNRAJ V', role: 'Design Executive', linkedin: '#', image: getMemberImage('VARUNRAJ V') },
+    { name: 'NITHISH KUMAR S', role: 'Design Executive', linkedin: '#', image: getMemberImage('NITHISH KUMAR S') },
+    { name: 'SOWMITHA S', role: 'Media Executive', linkedin: '#', image: getMemberImage('SOWMITHA S') },
+    { name: 'HARIPRASATH S', role: 'Media Executive', linkedin: '#', image: getMemberImage('HARIPRASATH S') },
   ];
 
   const coordinators = [
-    { name: 'AKILAN K', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'ANITHA M', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'ARAVIND A', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'GANESH MOORTHI K', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'GNANAPRAKASH D T', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'KAUSHIK KUMAR S R', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'NIDHARSHAN S S', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'PADMALOSANA S', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'POORNITHA V', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'PRAJIT AJAY S', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'SATHISH S', role: 'COORDINATOR', linkedin: '#' },
-    { name: 'SURESH C', role: 'COORDINATOR', linkedin: '#' },
+    { name: 'AKILAN K', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('AKILAN K') },
+    { name: 'ANITHA M', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('ANITHA M') },
+    { name: 'ARAVIND A', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('ARAVIND A') },
+    { name: 'GANESH MOORTHI K', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('GANESH MOORTHI K') },
+    { name: 'GNANAPRAKASH D T', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('GNANAPRAKASH D T') },
+    { name: 'KAUSHIK KUMAR S R', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('KAUSHIK KUMAR S R') },
+    { name: 'NIDHARSHAN S S', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('NIDHARSHAN S S') },
+    { name: 'PADMALOSANA S', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('PADMALOSANA S') },
+    { name: 'POORNITHA V', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('POORNITHA V') },
+    { name: 'PRAJIT AJAY S', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('PRAJIT AJAY S') },
+    { name: 'SATHISH S', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('SATHISH S') },
+    { name: 'SURESH C', role: 'COORDINATOR', linkedin: '#', image: getMemberImage('SURESH C') },
   ];
 
   return (
@@ -79,7 +134,7 @@ const Team = () => {
             {staffInCharge.map((staff, index) => (
               <div key={index} className="staff-card">
                 <div className="staff-avatar">
-                  <img src={memberAvatar} alt={staff.name} className="staff-avatar-img" />
+                  <img src={staff.image} alt={staff.name} className="staff-avatar-img" />
                 </div>
                 <h3 className="staff-name">{staff.name}</h3>
                 <p className="staff-designation">{staff.designation}</p>
@@ -98,7 +153,7 @@ const Team = () => {
             {officeBearers.map((member, index) => (
               <div key={index} className="member-card office-bearer-card">
                 <div className="member-avatar">
-                  <img src={memberAvatar} alt={member.name} className="member-avatar-img" />
+                  <img src={member.image} alt={member.name} className="member-avatar-img" />
                 </div>
                 <h3 className="member-name">{member.name}</h3>
                 <p className="member-designation">{member.designation}</p>
@@ -127,7 +182,7 @@ const Team = () => {
             {executives.map((member, index) => (
               <div key={index} className="member-card executive-card">
                 <div className="member-avatar">
-                  <img src={memberAvatar} alt={member.name} className="member-avatar-img" />
+                  <img src={member.image} alt={member.name} className="member-avatar-img" />
                 </div>
                 <h3 className="member-name">{member.name}</h3>
                 <p className="member-role">{member.role}</p>
@@ -156,7 +211,7 @@ const Team = () => {
             {coordinators.map((member, index) => (
               <div key={index} className="member-card coordinator-card">
                 <div className="member-avatar">
-                  <img src={memberAvatar} alt={member.name} className="member-avatar-img" />
+                  <img src={member.image} alt={member.name} className="member-avatar-img" />
                 </div>
                 <h3 className="member-name">{member.name}</h3>
                 <p className="member-role">{member.role}</p>
@@ -223,8 +278,8 @@ const Team = () => {
       <section className="team-cta">
         <h2>Join Us at SHACKLES 2025</h2>
         <p>Be part of an unforgettable experience</p>
-        <Link to="/register" className="btn-register-team">
-          Register Now
+        <Link to="/maintenance" className="btn-register-team maintenance-btn">
+          Registration Coming Soon 🔧
         </Link>
       </section>
     </div>

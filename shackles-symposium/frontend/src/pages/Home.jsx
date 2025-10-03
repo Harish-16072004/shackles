@@ -272,10 +272,13 @@ function Home() {
             </div>
             <h3>Alagappa Chettiar Government College of Engineering and Technology</h3>
             <p>
-              Established with a vision to create world-class engineers, ACGCET stands as a 
-              beacon of technical excellence in Tamil Nadu. For decades, we have shaped minds, 
-              nurtured innovation, and prepared students to face the challenges of the modern world. 
-              Our institution is the foundation upon which champions are built.
+              Our institution ACGCET stands tall as a beacon of knowledge with a proud legacy of over 70 years. As an autonomous 
+              government institution, we combine the richness of tradition with the dynamism of innovation to deliver world-class 
+              education at an affordable cost. Our serene campus, experienced faculty, and industry-focused curriculum create the 
+              perfect environment for intellectual growth and holistic development. Beyond academics, our institute offers student
+              associations, clubs, sports, and cultural platforms that nurture leadership, creativity, and teamwork. At ACGCET, we
+              are committed to empowering students to transform into skilled professionals and responsible individuals, ready to
+              thrive in an ever-evolving global landscape.
             </p>
           </div>
 
@@ -286,10 +289,7 @@ function Home() {
             </div>
             <h3>Department of Mechanical Engineering</h3>
             <p>
-              At the heart of innovation lies the Department of Mechanical Engineering. 
-              We don't just teach theory—we forge problem-solvers, designers, and leaders. 
-              Through rigorous training, cutting-edge projects, and real-world applications, 
-              our department transforms students into industry-ready professionals who drive technological advancement.
+              Established in 1952, our NBA-accredited Department of Mechanical Engineering is a hub of innovation and excellence. We offer a comprehensive range of programs including B.E. (Full-time & Part-time), M.E. in Manufacturing and CAD, and a robust Ph.D. program. Recognized as a research center by Anna University since 2002, we have proudly produced over 50 Ph.D.s in cutting-edge fields like Additive Manufacturing, Robotics, and Composite Materials. Our students gain hands-on experience in state-of-the-art facilities, including a Centre of Excellence in Additive Manufacturing, and enhance their employability through industrial internships and active participation in prestigious national competitions like SAE BAJA and GO-KART.
             </p>
           </div>
 
