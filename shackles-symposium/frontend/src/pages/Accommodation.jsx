@@ -94,19 +94,19 @@ const Accommodation = () => {
                 <div className="date-selection">
                   <button
                     type="button"
-                    className={`date-btn ${selectedDates.includes('OCT 2') ? 'active' : ''}`}
-                    onClick={() => handleDateToggle('OCT 22')}
-                  >
-                    OCT 22
-                    {selectedDates.includes('OCT 22') && <span className="selected-indicator">✓</span>}
-                  </button>
-                  <button
-                    type="button"
                     className={`date-btn ${selectedDates.includes('OCT 23') ? 'active' : ''}`}
                     onClick={() => handleDateToggle('OCT 23')}
                   >
                     OCT 23
                     {selectedDates.includes('OCT 23') && <span className="selected-indicator">✓</span>}
+                  </button>
+                  <button
+                    type="button"
+                    className={`date-btn ${selectedDates.includes('OCT 24') ? 'active' : ''}`}
+                    onClick={() => handleDateToggle('OCT 24')}
+                  >
+                    OCT 24
+                    {selectedDates.includes('OCT 24') && <span className="selected-indicator">✓</span>}
                   </button>
                 </div>
                 {selectedDates.length > 0 && (
