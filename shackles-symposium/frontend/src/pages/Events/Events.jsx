@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import './Events.css';
 
 const Events = () => {
   const location = useLocation();
   const isMainPage = location.pathname === '/events';
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   if (!isMainPage) {
     return <Outlet />;

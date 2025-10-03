@@ -1,8 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Workshop.css';
 
 const Workshop = () => {
+  const location = useLocation();
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
+
   const workshops = [
     {
       id: 1,

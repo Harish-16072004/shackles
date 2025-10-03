@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +13,20 @@ const Contact = () => {
   });
 
   const [formStatus, setFormStatus] = useState('');
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   const handleChange = (e) => {
     setFormData({

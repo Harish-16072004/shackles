@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Team.css';
 
 // Import team member images
@@ -14,7 +14,7 @@ import gnanaprakashImage from '../assets/images/Gnanaprakash_DT.webp';
 import harishImage from '../assets/images/HARISH.webp';
 import hariPrasathImage from '../assets/images/Hari_Prasath.webp';
 import kaushikImage from '../assets/images/KAUSHIKKUMAR.webp';
-import killivalanImage from '../assets/images/Killivalavan.webp';
+import killivalanImage from '../assets/images/Killivalavan.jpg';
 import maarishImage from '../assets/images/MAARISH_AADITH.webp';
 import manjuImage from '../assets/images/MANJU_SELVAM.webp';
 import manojImage from '../assets/images/MANOJ_A.webp';
@@ -36,8 +36,28 @@ import sureshImage from '../assets/images/SURESH.webp';
 import suryaImage from '../assets/images/SURYA.webp';
 import varunrajImage from '../assets/images/VARUNRAJ.webp';
 import vigneshImage from '../assets/images/Vignesh.webp';
+import ganeshImage from '../assets/images/ganesh.jpg';
+import nithishImage from '../assets/images/nithish.png';
+import parameshwaranImage from '../assets/images/paramesh.jpg';
+
 
 const Team = () => {
+  const location = useLocation();
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
+
   // Function to get team member image
   const getMemberImage = (name) => {
     const imageMap = {
@@ -50,7 +70,7 @@ const Team = () => {
       'MOHAN V': manojImage, // Using MANOJ_A.webp for MOHAN V
       'BAVINA M': barathImage,
       'VIGNESHWARAN K': vigneshImage,
-      'PRABHUVELSUNDHAR S R': prabhuvelsundharImage,
+      'PRABUVELSUNDHR SR': prabhuvelsundharImage,
       'SAKTHIVEL': sakthivelImage,
       'SURYA R': suryaImage,
       'NISHWATH FATHIMA M': nishwathImage,
@@ -59,16 +79,16 @@ const Team = () => {
       'MUKILANDRAN C D': mukilandrenImage,
       'MANJU S': manjuImage,
       'PREM K': premImage,
-      'PARAMESWARAN S': prabhuvelsundharImage, // Using similar image for now
+      'PARAMESWARAN S': parameshwaranImage, // Using similar image for now
       'MAARISH AADITH M': maarishImage,
       'VARUNRAJ V': varunrajImage,
-      'NITHISH KUMAR S': nidharshanImage, // Using similar image for now
+      'NITHISH KUMAR S': nithishImage, // Using similar image for now
       'SOWMITHA S': sowmithaImage,
       'HARIPRASATH S': hariPrasathImage,
       'AKILAN K': akilanImage,
       'ANITHA M': anithaImage,
       'ARAVIND A': aravindImage,
-      'GANESH MOORTHI K': gnanaprakashImage, // Using similar image for now
+      'GANESH MOORTHI K': ganeshImage, // Using similar image for now
       'GNANAPRAKASH D T': gnanaprakashImage,
       'KAUSHIK KUMAR S R': kaushikImage,
       'NIDHARSHAN S S': nidharshanImage,
@@ -115,7 +135,7 @@ const Team = () => {
     { name: 'MOHAN V', designation: 'Technical Director', linkedin: '#', image: getMemberImage('MOHAN V') },
     { name: 'BAVINA M', designation: 'Technical Director', linkedin: '#', image: getMemberImage('BAVINA M') },
     { name: 'VIGNESHWARAN K', designation: 'Technical Director', linkedin: '#', image: getMemberImage('VIGNESHWARAN K') },
-    { name: 'PRABHUVELSUNDHAR S R', designation: 'Event Director', linkedin: '#', image: getMemberImage('PRABHUVELSUNDHAR S R') },
+    { name: 'PRABUVELSUNDAR SR', designation: 'Event Director', linkedin: '#', image: getMemberImage('PRABUVELSUNDAR SR') },
     { name: 'SAKTHIVEL K', designation: 'Event Director', linkedin: '#', image: getMemberImage('SAKTHIVEL') },
     { name: 'SURYA R', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('SURYA R') },
     { name: 'NISHWATH FATHIMA M', designation: 'Design and Media Director', linkedin: '#', image: getMemberImage('NISHWATH FATHIMA M') },

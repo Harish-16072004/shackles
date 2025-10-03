@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Home.css';
 import acgcetLogo from '../assets/images/ACGCET.webp';
@@ -6,6 +6,7 @@ import departmentLogo from '../assets/images/DEPARTMENT.webp';
 import shacklesLogo from '../assets/images/ASSOLOGO.webp';
 
 function Home() {
+  const location = useLocation();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -14,6 +15,20 @@ function Home() {
   });
   const [showSparkles, setShowSparkles] = useState(false);
   const [countdownEnded, setCountdownEnded] = useState(false);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   useEffect(() => {
     const eventDate = new Date('2025-10-23T00:00:00');

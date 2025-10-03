@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Technical.css';
 
 const Special = () => {
+  const location = useLocation();
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   const specialEvents = [
     {
       id: 1,
-      name: 'Idea Pitching',
+      name: 'VISION TRIAL',
       symbol: '△',
       description: 'Present your innovative business ideas to a panel of judges and investors.',
       rules: [
@@ -20,13 +35,13 @@ const Special = () => {
         'Focus on feasibility and market potential',
       ],
       coordinator: {
-        name: 'Gokul S',
-        phone: '+91 9514585887',
+        name: 'VIGNESH',
+        phone: '+91 9787537488',
       },
     },
     {
       id: 2,
-      name: 'Robo Soccer',
+      name: 'ROBO RUMBLE',
       symbol: '△',
       description: 'Build and control robots to compete in an exciting soccer match.',
       rules: [
@@ -38,8 +53,8 @@ const Special = () => {
         'Robot must be built on-site (materials provided)',
       ],
       coordinator: {
-        name: 'Sharun',
-        phone: '+91 9384583077',
+        name: 'SHYAM SUNDAR',
+        phone: '+91 8072372844',
       },
     },
   ];

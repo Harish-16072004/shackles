@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Technical.css';
 
 const NonTechnical = () => {
+  const location = useLocation();
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Effect to scroll to top when location changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   const nonTechnicalEvents = [
     {
       id: 1,
-      name: 'IPL Auction',
+      name: 'SURVIVAL BID',
       symbol: '○',
       description: 'Build your dream IPL team through strategic bidding and team management.',
       rules: [
@@ -19,14 +34,14 @@ const NonTechnical = () => {
         'Points based on actual IPL performance',
       ],
       coordinator: {
-        name: 'Abishek',
-        phone: '+91 9384583077',
+        name: 'SIVASH ',
+        phone: '+91 9360462604',
       },
  
     },
     {
       id: 2,
-      name: 'Kollywood Quiz',
+      name: 'FILM QUEST',
       symbol: '○',
       description: 'Test your knowledge of Tamil cinema across decades.',
       rules: [
@@ -37,8 +52,8 @@ const NonTechnical = () => {
         'Duration: 1.5 hours',
       ],
       coordinator: {
-        name: 'Dharun',
-        phone: '+91 8098726547',
+        name: 'ILAKKIYA RAJAN KALAI',
+        phone: '+91 9360644238',
       },
     },
     {
@@ -54,8 +69,8 @@ const NonTechnical = () => {
         'First to finish line wins',
       ],
       coordinator: {
-        name: 'Naveen',
-        phone: '+91 9361428799',
+        name: 'THARUN RAJ',
+        phone: '+91 6369516359',
       },
     },
     {
@@ -72,8 +87,8 @@ const NonTechnical = () => {
         'Clean extraction required for winning',
       ],
       coordinator: {
-        name: 'Naveen',
-        phone: '+91 9361428799',
+        name: 'JEYAPRAKASH',
+        phone: '+91 6385237887',
       },
     },
   ];
