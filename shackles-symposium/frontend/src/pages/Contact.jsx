@@ -62,13 +62,13 @@ const Contact = () => {
       items: [
         {
           label: 'Killivalavan S',
-          value: '+91 9514585887',
-          link: 'tel:+919514585887',
+          value: '+91 6382853181',
+          link: 'tel:+916382853181',
         },
         {
           label: 'Abirami N',
-          value: '+91 9514585887',
-          link: 'tel:+919514585887',
+          value: '+91 6369234314',
+          link: 'tel:+916369234314',
         },
       ],
     },
@@ -77,8 +77,8 @@ const Contact = () => {
       items: [
         {
           label: 'Sakthivel K',
-          value: '+91 9384583077',
-          link: 'tel:+919384583077',
+          value: '+91 93420034079',
+          link: 'tel:+919342034079',
         },
         {
           label: 'Prabhuvelsundhar S R',
