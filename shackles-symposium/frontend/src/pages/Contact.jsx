@@ -81,7 +81,7 @@ const Contact = () => {
           link: 'tel:+919342034079',
         },
         {
-          label: 'Prabhuvelsundhar S R',
+          label: 'Prabuvelsundar S R',
           value: '+91 9600463229',
           link: 'tel:+919600463229',
         },

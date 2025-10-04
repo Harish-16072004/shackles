@@ -36,7 +36,7 @@ const Footer = () => {
             <p>
               <strong>Event Queries:</strong><br />
               Sakthivel K: <a href="tel:+919342034079">+91 9342034079</a><br />
-              Prabhuvelsundhar S R: <a href="tel:+919600463229">+91 9600463229</a>
+              Prabuvelsundar S R: <a href="tel:+919600463229">+91 9600463229</a>
             </p>
             <p>
               <strong>Registration Queries:</strong><br />
