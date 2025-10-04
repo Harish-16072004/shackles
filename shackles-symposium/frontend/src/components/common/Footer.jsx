@@ -30,17 +30,17 @@ const Footer = () => {
           <div className="contact-info">
             <p>
               <strong>General Queries:</strong><br />
-              Killivalavan S: <a href="tel:+916382853181">+91 63828 53181</a><br />
-              Abirami N: <a href="tel:+916369234314">+91 63692 34314</a>
+              Killivalavan S: <a href="tel:+916382853181">+91 6382853181</a><br />
+              Abirami N: <a href="tel:+916369234314">+91 6369234314</a>
             </p>
             <p>
               <strong>Event Queries:</strong><br />
-              Sakthivel K: <a href="tel:+919384583077">+91 93845 83077</a><br />
-              Prabhuvelsundhar S R: <a href="tel:+919600463229">+91 96004 63229</a>
+              Sakthivel K: <a href="tel:+919342034079">+91 9342034079</a><br />
+              Prabhuvelsundhar S R: <a href="tel:+919600463229">+91 9600463229</a>
             </p>
             <p>
               <strong>Registration Queries:</strong><br />
-              Harish J: <a href="tel:+917305432775">+91 73054 32775</a>
+              Harish J: <a href="tel:+917305432775">+91 7305432775</a>
             </p>
             <p>
               <strong>Email:</strong><br />
